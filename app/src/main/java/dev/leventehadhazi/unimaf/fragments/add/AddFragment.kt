@@ -14,12 +14,14 @@ import dev.leventehadhazi.unimaf.R
 import dev.leventehadhazi.unimaf.model.Book
 import dev.leventehadhazi.unimaf.viewmodel.BookViewModel
 import dev.leventehadhazi.unimaf.databinding.FragmentAddBinding
+import dev.leventehadhazi.unimaf.fragments.list.ListAdapter
 import kotlinx.android.synthetic.main.fragment_add.*
 
 class AddFragment : Fragment() {
     private var _binding: FragmentAddBinding? = null
 
     private lateinit var mBookViewModel: BookViewModel
+    private val adapter = ListAdapter()
 
     // This property is only valid between onCreateView and
     // onDestroyView.

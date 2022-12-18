@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import dev.leventehadhazi.unimaf.R
 import dev.leventehadhazi.unimaf.viewmodel.BookViewModel
 import dev.leventehadhazi.unimaf.databinding.FragmentListBinding
+import dev.leventehadhazi.unimaf.model.Book
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 class ListFragment : Fragment() {
