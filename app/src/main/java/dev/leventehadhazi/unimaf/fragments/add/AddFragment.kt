@@ -11,15 +11,11 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import dev.leventehadhazi.unimaf.R
-import dev.leventehadhazi.unimaf.data.Book
-import dev.leventehadhazi.unimaf.data.BookViewModel
+import dev.leventehadhazi.unimaf.model.Book
+import dev.leventehadhazi.unimaf.viewmodel.BookViewModel
 import dev.leventehadhazi.unimaf.databinding.FragmentAddBinding
 import kotlinx.android.synthetic.main.fragment_add.*
-import java.nio.file.attribute.UserDefinedFileAttributeView
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
 class AddFragment : Fragment() {
     private var _binding: FragmentAddBinding? = null
 

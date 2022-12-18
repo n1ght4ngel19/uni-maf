@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_ListFragment_to_AddFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_ListFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,5 +27,17 @@
         <action
             android:id="@+id/action_AddFragment_to_ListFragment"
             app:destination="@id/ListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="dev.leventehadhazi.unimaf.fragments.update.UpdateFragment"
+        android:label="Update Book"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+        <argument
+            android:name="currentBook"
+            app:argType="dev.leventehadhazi.unimaf.model.Book" />
     </fragment>
 </navigation>
